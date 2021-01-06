@@ -1,0 +1,27 @@
+html
+   head
+      title contact us
+      style
+            include ../public/stylesheets/styles.css
+   body
+        include ./navbar.pug
+        h2.section-title Contact Me
+        fieldset
+            form
+                div.contact
+                    label Name:
+                    input(type="text" name="first name" placeholder="Your name")
+                br
+                div.contact
+                    label Email:
+                    input(type="text" name="email" placeholder="Your email")
+                br
+                div.contact
+                    label Subject:
+                    input(type="text" name="subject" placeholder="Subject")
+                br
+                div.contact
+                    label Message:
+                    textarea(type="text" name="message" placeholder="Message")
+                br
+                button Send Message
